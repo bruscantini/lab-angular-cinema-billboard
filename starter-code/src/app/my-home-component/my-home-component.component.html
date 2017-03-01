@@ -1,0 +1,8 @@
+<p>
+  Here are our movies:
+</p>
+
+<ul>
+  <li *ngFor="let movie of movieService.movies">
+    <a routerLink="/movie/{{movie.id}}">{{movie.title}}</a></li>
+</ul>

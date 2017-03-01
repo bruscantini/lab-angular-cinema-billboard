@@ -1,0 +1,19 @@
+<h3>{{movie.title}}</h3>
+
+<div>
+  <img class="movie-poster" src="{{movie.poster}}" alt="movie poster">
+</div>
+<p>Synopsis: {{movie.synopsis}}</p>
+<ul>
+  Genres:
+  <li *ngFor="let genre of movie.genres">{{genre}}</li>
+</ul>
+<p>Year: {{movie.year}}</p>
+<p>Director: {{movie.director}}</p>
+<ul>
+  Actors:
+  <li *ngFor="let actor of movie.actors">{{actor}}</li>
+</ul>
+<p>Hours: {{movie.hours}}</p>
+<p>Room: {{movie.room}}</p>
+<a routerLink="/home">Go Back To All Movies</a>

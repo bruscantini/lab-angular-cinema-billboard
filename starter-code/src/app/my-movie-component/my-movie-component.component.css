@@ -1,0 +1,8 @@
+* {
+  text-align: center;
+}
+
+.movie-poster {
+  width: 150px;
+  height: auto;
+}
